@@ -19,7 +19,15 @@ public class UtopianTree {
         }
     }
 
-    private static void calculateHeightOfTree(int num){
-
+    private static void calculateHeightOfTree(int cycle){
+        int height = 1;
+        for (int i = 0 ; i < cycle ; i++){
+            if (i % 2 == 0){
+                height = height * 2;
+            }else{
+                height += 1;
+            }
+        }
+        System.out.println(height);
     }
 }
